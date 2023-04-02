@@ -1,0 +1,27 @@
+[debug] [2023-04-02T13:27:49.606Z] ----------------------------------------------------------------------
+[debug] [2023-04-02T13:27:49.608Z] Command:       /usr/local/bin/firebase /Users/80444/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-04-02T13:27:49.608Z] CLI Version:   11.24.0
+[debug] [2023-04-02T13:27:49.608Z] Platform:      darwin
+[debug] [2023-04-02T13:27:49.608Z] Node Version:  v16.16.0
+[debug] [2023-04-02T13:27:49.609Z] Time:          Sun Apr 02 2023 20:27:49 GMT+0700 (Indochina Time)
+[debug] [2023-04-02T13:27:49.609Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-02T13:27:49.719Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-02T13:27:49.720Z] > authorizing via signed-in user (clkeen157@gmail.com)
+[debug] [2023-04-02T13:27:49.721Z] [iam] checking project integrate-with-nextjs for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-04-02T13:27:49.723Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/integrate-with-nextjs:testIamPermissions [none]
+[debug] [2023-04-02T13:27:49.724Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/integrate-with-nextjs:testIamPermissions x-goog-quota-user=projects/integrate-with-nextjs
+[debug] [2023-04-02T13:27:49.724Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/integrate-with-nextjs:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-02T13:27:56.608Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/integrate-with-nextjs:testIamPermissions 200
+[debug] [2023-04-02T13:27:56.612Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/integrate-with-nextjs:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-02T13:27:56.615Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/integrate-with-nextjs [none]
+[debug] [2023-04-02T13:27:57.053Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/integrate-with-nextjs 200
+[debug] [2023-04-02T13:27:57.056Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/integrate-with-nextjs {"projectId":"integrate-with-nextjs","projectNumber":"941577112619","displayName":"integrate-with-nextjs","name":"projects/integrate-with-nextjs","resources":{"hostingSite":"integrate-with-nextjs"},"state":"ACTIVE","etag":"1_62a49d3e-9a29-4b0e-ab35-5078b167985a"}
+[debug] [2023-04-02T13:28:29.410Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:828:11)
+    at Object.execSync (node:child_process:899:15)
+    at execSync (pkg/prelude/bootstrap.js:2115:30)
+    at prepareFrameworks (/Users/80444/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:372:42)
+    at async deploy (/Users/80444/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
