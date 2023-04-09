@@ -17,5 +17,6 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          expires: 30d
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_INTEGRATE_WITH_NEXTJS }}'
           projectId: integrate-with-nextjs
