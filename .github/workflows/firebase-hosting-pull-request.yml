@@ -20,3 +20,5 @@ jobs:
           expires: 30d
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_INTEGRATE_WITH_NEXTJS }}'
           projectId: integrate-with-nextjs
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
